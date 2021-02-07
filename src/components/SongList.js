@@ -40,7 +40,7 @@ class SongList extends Component {
 // every time we click on the button the new state will changed on every render
 // every time we click on a button a new state will be generated
 const mapStateToProps = (state) => {
-	console.log(state);
+	// console.log(state);
 	// return an object that will show up as props in our component
 	return { songs: state.songs };
 	// Console.log state to be sure it works
@@ -49,5 +49,7 @@ const mapStateToProps = (state) => {
 // Info about the syntax - connect is a closure function
 // Call connect and  pass in our component as out second component call
 // Put the action creator into mapStateToProps
-// its going to take that action in a send that to redux's dispatch function
+// its going to take that action creator in a send that to redux's dispatch function
+// dispactch returns an action object
+// connect function puts the action creator in our dispatch for us - ALWAYS PASS IT INTO connect function
 export default connect(mapStateToProps, { selectSong: selectSong })(SongList);

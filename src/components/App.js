@@ -1,5 +1,6 @@
 import React from 'react';
 import SongList from './SongList';
+import SongDetail from './SongDetail';
 
 /* Let's say we want to get our list of songs into the songs list and console log them 
 in order to do so we will need to create an instance of our connect compoment 
@@ -13,6 +14,9 @@ const App = () => {
 			<div className="ui row">
 				<div className="column eight wide">
 					<SongList />
+				</div>
+				<div className="column eight wide">
+					<SongDetail />
 				</div>
 			</div>
 		</div>
