@@ -1,6 +1,4 @@
 import React from 'react';
-// curly braces specifically mean we want to import a named export from that file
-import { selectSong } from '../actions';
 import SongList from './SongList';
 
 /* Let's say we want to get our list of songs into the songs list and console log them 
